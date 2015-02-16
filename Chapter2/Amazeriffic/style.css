@@ -1,5 +1,35 @@
-/*
-.relevant p:nth-child(2) ,.relevant p:nth-child(4){
-  color: red;
+main
+{
+  width:400px;
 }
-*/
+.main
+{
+    border-bottom-style: inset;
+}
+.main a:hover
+{
+    text-decoration:underline;
+}
+.main a
+{
+    color:#0986e3;
+    text-decoration:none;
+    font-weight:bold;
+    display:block;
+       outline:none;
+    padding:5px 0px;
+    margin: 5px 0px;
+}
+.main div {
+
+ display: block;
+    -webkit-transition: opacity 1.5s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.main a:focus + div{
+  opacity: 1;
+    height: auto;
+}
