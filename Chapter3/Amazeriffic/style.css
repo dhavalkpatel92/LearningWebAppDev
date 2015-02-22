@@ -50,6 +50,47 @@ footer .sitemap {
   float: right;
   width: 285px;
 }
+main .container
+{
+  padding: 20px 0px;
+}
+.main
+{
+    width:400px;
+    border-bottom-style: inset;
+    border-bottom: 3px solid beige;
+}
+.main a:hover
+{
+    text-decoration:underline;
+}
+.main a
+{
+    color:#0986e3;
+    text-decoration:none;
+    font-weight:bold;
+    display:block;
+       outline:none;
+    padding:5px 0px;
+    margin: 5px 0px;
+}
+.main div {
+
+ display: block;
+    -webkit-transition: opacity 1.5s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.main a:focus + div{
+  opacity: 1;
+    height: auto;
+}
+.heading
+{
+  font-size:50px;
+}
 
 /*Step 1
 h1 {
