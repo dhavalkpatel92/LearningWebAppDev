@@ -106,7 +106,7 @@ footer {
 
 footer .contact {
   float: left;
-  width: 570px;    
+  width: 570px;
 }
 
 footer .contact p:nth-child(2) {
@@ -133,4 +133,48 @@ footer .sitemap .left {
 
 footer .sitemap .right {
     float: right;
+}
+
+main .container
+{
+  padding: 20px 0px;
+}
+.main
+{
+  margin: 0 auto;
+    width:400px;
+    border-bottom-style: inset;
+    border-bottom: 3px solid beige;
+}
+.main a:hover
+{
+    text-decoration:underline;
+}
+.main a
+{
+    color:#0986e3;
+    text-decoration:none;
+    font-weight:bold;
+    display:block;
+       outline:none;
+    padding:5px 0px;
+    margin: 5px 0px;
+}
+.main div {
+
+ display: block;
+    -webkit-transition: opacity 1.5s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.main a:focus + div{
+  opacity: 1;
+    height: auto;
+}
+.heading
+{
+  text-align: center;
+font-size: 35px;
 }
