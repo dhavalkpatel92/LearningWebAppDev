@@ -92,7 +92,7 @@ main .content button {
 
 
 main .content p {
-    background: yellow;
+    /*background: yellow;*/
 }
 
 main .content input {
@@ -177,4 +177,14 @@ main .container
 {
   text-align: center;
 font-size: 35px;
+}
+.content
+{
+  position: relative;
+  overflow: hidden;
+}
+.content p a.group4 img
+{
+  float:left;
+  margin: 10px 15px;
 }

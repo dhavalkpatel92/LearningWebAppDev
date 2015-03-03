@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<title>Colorbox Examples</title>
+		<style>
+			body{font:12px/1.2 Verdana, sans-serif; padding:0 10px;}
+			a:link, a:visited{text-decoration:none; color:#416CE5; border-bottom:1px solid #416CE5;}
+			h2{font-size:13px; margin:15px 0 0 0;}
+			p{float:left;margin:0 15px;}
+		</style>
+		<link rel="stylesheet" href="colorbox.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".group4").colorbox({rel:'group4', slideshow:true, open:true});
+
+			});
+		</script>
+	</head>
+	<body>
+		<p><a class="group4"  href="img/pic1.png" title="First Tab of Amazerrific"><img src="img/pic1.png" width="300" height="200"></a></p>
+		<p><a class="group4"  href="img/pic2.png" title="Second Tab of Amazerrific"><img src="img/pic2.png" width="300" height="200"></a></p>
+		<p><a class="group4"  href="img/pic3.png" title="Third Tab of Amazerrific"><img src="img/pic3.png" width="300" height="200"></a></p>
+		<p><a class="group4"  href="img/pic4.png" title="FAQ Amazerrific"><img src="img/pic4.png" width="300" height="200"></a></p>
+
+		</body>
+</html>

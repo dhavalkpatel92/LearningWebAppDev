@@ -1,0 +1,13 @@
+div
+{
+  float:left;
+  margin-left: 35px;
+  margin-bottom:20px
+}
+section
+{
+  height:700px;
+  overflow-y: auto;
+  background-color: rgb(236, 236, 236);
+  padding: 5px;
+}

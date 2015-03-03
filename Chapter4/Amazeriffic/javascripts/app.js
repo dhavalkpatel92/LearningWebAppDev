@@ -50,10 +50,12 @@ var main = function () {
                 can be done with $content = $("<div>").append($input, $button); */
             }
             else if ($element.parent().is(":nth-child(4)")) {
+              $content="<p><a class='group4'  href='img/pic1.png' title='First Tab of Amazerrific'><img src='img/pic1.png' width='300' height='200'></a></p><p><a class='group4'  href='img/pic2.png' title='Second Tab of Amazerrific'><img src='img/pic2.png' width='300' height='200'></a></p><p><a class='group4'  href='img/pic3.png' title='Third Tab of Amazerrific'><img src='img/pic3.png' width='300' height='200'></a></p><p><a class='group4'  href='img/pic4.png' title='FAQ Amazerrific'><img src='img/pic4.png' width='300' height='200'></a></p>";
+
             }
 
             $("main .content").append($content);
-
+            $(".group4").colorbox({rel:'group4', slideshow:true, open:true});
             return false;
         });
     });
@@ -61,4 +63,4 @@ var main = function () {
     $(".tabs a:first-child span").trigger("click");
 };
 
-$(document).ready(main);
+  $(document).ready(main);
