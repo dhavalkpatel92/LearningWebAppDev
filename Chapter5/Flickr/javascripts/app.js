@@ -4,6 +4,7 @@ var main = function () {
     var requestURL = "http://api.flickr.com/services/feeds/photos_public.gne?tags=dog&format=json&jsoncallback=?";
 
     $.getJSON(requestURL, function(flickrResponse) {
+
         flickrResponse.items.forEach(function (item) {
 
             // create a new JQuery element to hold the image
