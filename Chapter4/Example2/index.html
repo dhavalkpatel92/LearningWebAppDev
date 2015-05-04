@@ -13,17 +13,13 @@
     </header>
 
     <main ng-controller="comment_sysCtrl">
-    <span> {{ message }} </span>
       <section class='comment-input'>
         <p>Add Your Comment:</p>
-        <input><button>+</button>
+        <input ng-model="comment_input"><button ng-click="addCommentFromInputBox()">+</button>
       </section>
 
-      <section class='comments'>
-        <p>This is the first comment!</p>
-        <p>Here's the second one!</p>
-        <p>And this is one more.</p>
-        <p>Here is another one!</p>
+      <section class='comments' ng-repeat="comment in comments track by $index">
+        <p>{{comment}}</p>
       </section>
     </main>
 
