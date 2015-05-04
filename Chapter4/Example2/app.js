@@ -1,27 +1,6 @@
-var main = function () {
-    "use strict";
+var app = angular.module('comment_sys', []);
 
-    var addCommentFromInputBox = function () {
-        var $new_comment;
+app.controller('comment_sysCtrl', function($scope) {
+  $scope.message = 'Angular is pretty cool.';
 
-        if ($(".comment-input input").val() !== "") {
-            $new_comment = $("<p>").text($(".comment-input input").val());
-            $new_comment.hide();
-            $(".comments").append($new_comment);
-            $new_comment.fadeIn();
-            $(".comment-input input").val("");
-        }
-    };
-
-    $(".comment-input button").on("click", function (event) {
-        addCommentFromInputBox();
-    });
-
-    $(".comment-input input").on("keypress", function (event) {
-        if (event.keyCode === 13) {
-            addCommentFromInputBox();
-        }
-    });
-};
-
-$(document).ready(main);
+});
