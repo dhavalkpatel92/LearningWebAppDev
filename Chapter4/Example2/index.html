@@ -1,36 +1,39 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <title>A Simple App</title>
 
     <link href='style.css' rel='stylesheet' type='text/css'>
-  </head>
+</head>
 
-  <body ng-app="comment_sys">
+<body ng-app="comment_sys">
     <header>
-      <h1>Comments</h1>
-      <p>A simple app that allows a user to input comments</p>
+        <h1>Comments</h1>
+        <p>A simple app that allows a user to input comments</p>
     </header>
 
     <main ng-controller="comment_sysCtrl">
-      <section class='comment-input'>
-        <p>Add Your Comment:</p>
-        <input ng-model="comment_input"><button ng-click="addCommentFromInputBox()">+</button>
-      </section>
+        <section class='comment-input'>
+            <p>Add Your Comment:</p>
+            <input ng-model="comment_input">
+            <button ng-click="addCommentFromInputBox()">+</button>
+        </section>
 
-      <section class='comments' ng-repeat="comment in comments track by $index">
-        <p>{{comment}}</p>
-      </section>
+        <section class='comments' ng-repeat="comment in comments track by $index">
+            <p>{{comment}}</p>
+        </section>
     </main>
 
     <footer>
-      <p>this work is released into the public domain</p>
+        <p>this work is released into the public domain</p>
     </footer>
 
     <!--script src="http://code.jquery.com/jquery-2.0.3.min.js"></script-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.js">
     </script>
-    
+
     <script src="app.js"></script>
-  </body>
+</body>
+
 </html>
