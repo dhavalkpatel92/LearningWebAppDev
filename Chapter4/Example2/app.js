@@ -9,7 +9,7 @@ app.controller('comment_sysCtrl', function($scope) {
         'Here is another one!'
     ];
 
-    $scope.addCommentFromInputBox = function(e) {
+    $scope.addCommentFromInputBox = function() {
         if ($scope.comment_input == null) {
             alert('cant null');
         } else {
